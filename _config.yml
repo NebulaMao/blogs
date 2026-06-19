@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: My Blog
-subtitle: '记录与分享'
-description: '一个使用 Hexo + Butterfly 搭建的个人博客'
-keywords: hexo,butterfly,blog
-author: nebulamao
+title: 星云猫的博客
+subtitle: 'AI 技术分享'
+description: '段尚易（星云猫）的个人博客，专注 AI 技术相关的分享与思考'
+keywords: AI,人工智能,机器学习,深度学习,LLM,大模型,星云猫,nebulamao
+author: 星云猫
 language: zh-CN
 timezone: 'Asia/Shanghai'
 

@@ -18,10 +18,11 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-user
 
 # --------------------------------------
 # Code Blocks Settings
@@ -46,7 +47,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  fab fa-github: https://github.com/nebulamao || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
@@ -149,7 +150,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -165,6 +166,8 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 分享 AI 技术与思考
+    - Stay hungry, stay foolish.
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -259,7 +262,7 @@ footer:
   nav:
   owner:
     enable: true
-    since: 2025
+    since: 2026
   # Copyright of theme and framework
   copyright:
     enable: true
@@ -284,15 +287,15 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 段尚易 / 星云猫 · 专注 AI 技术分享
     button:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/nebulamao
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 欢迎来到星云猫的博客，这里主要分享 AI 技术相关的内容 🚀
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -533,7 +536,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Giscus
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -629,14 +632,18 @@ twikoo:
 
 # Giscus
 # https://giscus.app/
+# 设置步骤见文末说明：在 giscus.app 生成后，把下面 4 个值填进去即可
 giscus:
-  repo:
-  repo_id:
-  category_id:
+  repo: nebulamao/REPLACE_WITH_YOUR_REPO   # 例如 nebulamao/blog（需 Public 且开启 Discussions）
+  repo_id: REPLACE_WITH_REPO_ID            # giscus.app 生成的 data-repo-id
+  category_id: REPLACE_WITH_CATEGORY_ID    # giscus.app 生成的 data-category-id（建议用 Announcements 分类）
   light_theme: light
   dark_theme: dark
   js:
   option:
+    # data-mapping: pathname
+    # data-input-position: top
+    # data-lang: zh-CN
 
 # Remark42
 # https://remark42.com/docs/configuration/frontend/
